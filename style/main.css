@@ -1,0 +1,335 @@
+@charset "UTF-8";
+.nav {
+  display: flex;
+  align-items: center;
+  padding-top: 1.4em;
+}
+.nav__menu {
+  /* flex-basis: 82%; */
+  /* flex: 1;*/
+  display: none;
+  padding: 1em;
+  border-radius: 5px;
+  list-style-type: none;
+}
+.nav__menu::before {
+  content: "🚛";
+  position: relative;
+  left: 80px;
+  bottom: 0;
+  width: 30px;
+  height: 30px;
+  z-index: 3;
+}
+.nav__menu::after {
+  content: "every.";
+  color: #161b2c;
+  font-weight: bold;
+  font-size: 1.3rem;
+  position: relative;
+  left: 0;
+  bottom: 292px;
+  width: 30px;
+  height: 30px;
+  z-index: 3;
+}
+.nav__menu__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.nav__menu__wrapper hr {
+  opacity: 0.3;
+}
+.nav__menu__wrapper .nav__menu__item:nth-child(2) {
+  margin-top: 0.5em;
+}
+.nav__menu__wrapper .nav__menu__item {
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+.nav .open {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 10px;
+  color: #bac0c9;
+  background-color: #f0f0f1;
+}
+.nav h2 {
+  color: #f0f0f1;
+  text-align: center;
+  flex-basis: 80%;
+}
+.nav span {
+  color: #3a5ee2;
+}
+.nav__menu--hamburger {
+  cursor: pointer;
+  padding-left: 0.5em;
+  width: 10%;
+  height: 10%;
+  max-width: 2.5em;
+  max-height: 2.5em;
+}
+
+.hero {
+  color: #f0f0f1;
+  text-align: center;
+  padding-bottom: 3em;
+}
+.hero__title {
+  padding-top: 2em;
+  font-weight: normal;
+}
+.hero__subtitle {
+  font-size: 0.8rem;
+  margin: 2em 0;
+  color: #bac0c9;
+  word-spacing: 1px;
+}
+.hero .space {
+  word-spacing: 15px;
+}
+.hero .btn {
+  background-color: #4069ff;
+  padding: 0.8em;
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 60%;
+  max-width: 13em;
+}
+
+.finance-cloud {
+  text-align: center;
+}
+.finance-cloud img {
+  width: 8%;
+  margin: 2em 0 0.6em 0;
+}
+.finance-cloud__heading img {
+  width: 8%;
+  max-width: 1.83em;
+  margin: 2em 0 0.6em 0;
+}
+.finance-cloud__heading p {
+  margin: 1em 0;
+}
+.finance-cloud__heading > *:not(p, img) {
+  margin-bottom: 2em;
+}
+.finance-cloud__heading h4 {
+  letter-spacing: 5px;
+  border-bottom: 1px solid rgba(58, 94, 226, 0.3);
+}
+.finance-cloud__title {
+  font-weight: normal;
+}
+.finance-cloud__cards > * {
+  margin-bottom: 3em;
+}
+.finance-cloud__card {
+  border: 1px solid rgba(186, 192, 201, 0.3);
+  border-radius: 10px;
+  padding: 1em 1em;
+}
+.finance-cloud__card .big {
+  width: 18%;
+  max-width: 4.01em;
+  margin: 1em 0 0.6em 0;
+}
+.finance-cloud__card h5,
+.finance-cloud__card p {
+  margin-bottom: 1.5em;
+}
+.finance-cloud__card h5 {
+  font-size: 1rem;
+}
+.finance-cloud__card p {
+  color: #bac0c9;
+}
+
+.treasury {
+  border-radius: 10px;
+  color: #f0f0f1;
+}
+.treasury .earnings {
+  padding: 1em 1.5em 1em 1.5em;
+  background-color: #161b2c;
+  border-radius: 10px;
+}
+.treasury .earnings > * {
+  margin-bottom: 1em;
+}
+.treasury .earnings .earnings__header h2 {
+  margin-bottom: 1em;
+}
+.treasury .earnings__input {
+  font-weight: bold;
+}
+.treasury .earnings__input .earnings__img {
+  width: 1.1em;
+  position: relative;
+  top: 2.8em;
+  right: 3em;
+}
+.treasury .earnings__input input {
+  background-color: #161b2c;
+  border: 1px solid rgba(186, 192, 201, 0.2);
+  padding: 0.8em 0.8em 0.8em 2.8em;
+  border-radius: 5px;
+  margin-top: 1em;
+  width: 100%;
+  color: #f0f0f1;
+}
+.treasury .earnings__input button {
+  background-color: #4069ff;
+  padding: 0.8em;
+  border-radius: 10px;
+  border: none;
+  margin: 0 auto;
+  width: 60%;
+  cursor: pointer;
+  color: #f0f0f1;
+  margin-top: 1em;
+  width: 100%;
+}
+.treasury .earnings__input button:hover {
+  background-color: blueviolet;
+}
+.treasury .earnings__calculation {
+  background-color: #242b40;
+  text-align: center;
+  padding: 1.5em 0;
+  border-radius: 5px;
+}
+.treasury .earnings__calculation .earnings__total {
+  margin-top: 0.5em;
+}
+.treasury span {
+  color: #7eb6d4;
+}
+
+.process {
+  text-align: center;
+  color: #f0f0f1;
+  margin-top: 4em;
+}
+.process .container {
+  padding: 1em;
+  background: linear-gradient(90deg, rgb(37, 79, 226) 0%, rgb(143, 210, 253) 100%);
+  border-radius: 15px;
+}
+.process__heading img {
+  width: 8%;
+  max-width: 1.83em;
+  margin: 2em 0 0.6em 0;
+}
+.process__heading p {
+  margin: 1em 0;
+}
+.process__heading > *:not(p, img) {
+  margin-bottom: 2em;
+}
+.process__heading h4 {
+  letter-spacing: 5px;
+  border-bottom: 1px solid #f0f0f1;
+}
+.process__heading h2 {
+  font-size: 1.8rem;
+  word-spacing: 5px;
+  line-height: 2.6rem;
+}
+.process__title {
+  font-weight: normal;
+}
+.process__cards > * {
+  margin-bottom: 3em;
+}
+.process__cards button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f0f0f1;
+  padding: 0.8em;
+  border-radius: 8px;
+  border: none;
+  margin: 0 auto;
+  width: 60%;
+  max-width: 12em;
+  cursor: pointer;
+  color: black;
+  font-weight: bold;
+}
+.process__cards button img {
+  flex-basis: 0;
+  width: 16%;
+}
+.process__cards button:hover {
+  background-color: #c5c5c5;
+}
+.process__card {
+  background-color: rgba(186, 192, 201, 0.3);
+  border-radius: 10px;
+  padding: 1em;
+  margin-right: 1em;
+  margin-left: 1em;
+}
+.process__card h5,
+.process__card p {
+  margin-bottom: 1.5em;
+}
+.process__card h5 {
+  font-size: 1rem;
+}
+.process__card .process__number__circle {
+  color: black;
+  background-color: #f0f0f1;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1em auto;
+  padding: 1rem;
+  border-radius: 50%;
+  width: 27%;
+  max-width: 3em;
+  height: 50%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333847;
+}
+
+header,
+.hero {
+  background-color: #161b2c;
+}
+
+.container {
+  width: 80%;
+  max-width: 18.75em;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #f0f0f1;
+}
+
+.all-in-one,
+.hr-cloud,
+.differentiator,
+.pricing {
+  display: none;
+}/*# sourceMappingURL=main.css.map */
